@@ -20,8 +20,12 @@ body {
 }
 button {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   border: none;
   padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
 }
 address {
   font-style: normal;
@@ -132,28 +136,19 @@ a {
   color: var(--white-color);
   padding: 10px 32px;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.875;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
 /* кнопки в фильтре */
 .button {
   background-color: var(--white-color);
   color: var(--primary-text-color);
-  cursor: pointer;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
-  border-radius: 4px;
-  padding: 6px 22px;
 }
 .button-active {
   background-color: var(--accent);
