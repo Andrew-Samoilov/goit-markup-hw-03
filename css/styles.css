@@ -192,3 +192,17 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
+
+/* добавляем flex  */
+.section > .list {
+  width: 1170px;
+  display: flex;
+  justify-content: space-around;
+}
+.filter > .list {
+  display: flex;
+}
+.portfolio > .list {
+  display: flex;
+  flex-wrap: wrap;
+}
