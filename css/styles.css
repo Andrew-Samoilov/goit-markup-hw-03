@@ -60,6 +60,7 @@ img {
   text-decoration: none;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
 }
 .logo-header {
   color: var(--primary-text-color);
@@ -69,11 +70,22 @@ img {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+/* .site-contact .item,
+.site-nav .item {
+  margin-right: 50px;
+} */
+.item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .link:focus,
@@ -137,6 +149,8 @@ img {
   background-color: var(--background-color);
   color: var(--white-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -197,8 +211,12 @@ img {
 }
 
 /* добавляем flex  */
-.section > .list {
+.container {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section > .list {
   display: flex;
   justify-content: space-around;
 }
@@ -215,7 +233,13 @@ img {
 .site-nav,
 .site-nav > .list {
   display: flex;
+  align-items: center;
 }
 .site-contact {
   margin-left: auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* dofgosuhdfgiusddf */
