@@ -48,7 +48,10 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
 /* навигация */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -195,7 +198,7 @@ p {
 
 /* добавляем flex  */
 .section > .list {
-  width: 1170px;
+  width: 1200px;
   display: flex;
   justify-content: space-around;
 }
@@ -205,4 +208,14 @@ p {
 .portfolio > .list {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc(100% / 3);
+}
+.page-header,
+.site-contact,
+.site-nav,
+.site-nav > .list {
+  display: flex;
+}
+.site-contact {
+  margin-left: auto;
 }
