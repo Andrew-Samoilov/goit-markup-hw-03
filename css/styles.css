@@ -55,6 +55,11 @@ button {
   text-align: center;
   cursor: pointer;
 }
+/* filter item  */
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* навигация */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -213,6 +218,9 @@ margin-right: 30px; сделаю 1н клас на всех */
   width: 100%;
 }
 /* кнопки в фильтре */
+.filter {
+  margin-bottom: 50px;
+}
 .button {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -234,6 +242,7 @@ margin-right: 30px; сделаю 1н клас на всех */
 
 .filter .list {
   justify-content: center;
+  display: flex;
 }
 
 /* секція портфоліо */
@@ -242,9 +251,11 @@ margin-right: 30px; сделаю 1н клас на всех */
   margin-top: -30px;
 }
 .portfolio-item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .portfolio-work {
@@ -263,6 +274,9 @@ margin-right: 30px; сделаю 1н клас на всех */
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
+.portfolio-text-margin {
+  margin: 20px 24px;
+}
 
 /* добавляем flex  */
 .container {
@@ -273,9 +287,6 @@ margin-right: 30px; сделаю 1н клас на всех */
   padding-right: 15px;
 }
 
-.filter > .list {
-  display: flex;
-}
 .portfolio > .list {
   display: flex;
   flex-wrap: wrap;
