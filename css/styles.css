@@ -10,14 +10,28 @@
   --white-color: #ffffff;
 }
 /* сброс стилей */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 p {
   margin-top: 0;
+}
+p:last-child {
   margin-bottom: 0;
 }
 img {
@@ -112,6 +126,13 @@ button {
   line-height: 1.42;
   letter-spacing: 0.02em;
 }
+/* линия в хеадере */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header .container {
+  display: flex;
+}
 
 /* секция */
 .section-title {
@@ -203,12 +224,26 @@ button {
 display: flex; сделаю 1н клас на всех */
 .flex-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 /* в каждой секции елементам списка нужно давать 
 margin-right: 30px; сделаю 1н клас на всех */
-.item:not(:last-child) {
+/* .item:not(:last-child) {
   margin-right: 30px;
+} */
+li.item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.work .item {
+  flex-basis: calc(100% / 3 - 30px);
+}
+.team .item {
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 /* секция особенности features*/
@@ -217,9 +252,12 @@ margin-right: 30px; сделаю 1н клас на всех */
   padding-bottom: 0;
   width: 100%;
 }
+
 /* кнопки в фильтре */
 .filter {
   margin-bottom: 50px;
+  justify-content: center;
+  display: flex;
 }
 .button {
   background-color: var(--white-color);
@@ -249,8 +287,10 @@ margin-right: 30px; сделаю 1н клас на всех */
 .portfolio .list {
   margin-left: -30px;
   margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.portfolio-item {
+.portfolio .item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -287,11 +327,6 @@ margin-right: 30px; сделаю 1н клас на всех */
   padding-right: 15px;
 }
 
-.portfolio > .list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
-}
 .page-header,
 .site-contact,
 .site-nav,
