@@ -23,6 +23,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 address {
   font-style: normal;
@@ -82,23 +83,23 @@ button {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-/* .site-contact .item,
-.site-nav .item {
-  margin-right: 50px;
-} */
-.item:not(:last-child) {
+
+.header-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .site-nav .link:focus,
 .site-nav .link:hover,
 .site-nav .link.current,
+.site-contact-footer .link:focus,
+.site-contact-footer .link:hover,
 .site-contact .link:focus,
 .site-contact .link:hover {
   color: var(--accent);
 }
 
 /* контакты в шапке и футере */
+.site-contact-footer .link,
 .site-contact .link {
   color: var(--secondary-color);
   font-style: normal;
@@ -130,6 +131,9 @@ button {
   font-weight: normal;
 }
 /* секція команда */
+.team-image {
+  margin-bottom: 30px;
+}
 .team-name {
   font-style: normal;
   font-weight: 500;
@@ -137,17 +141,33 @@ button {
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 .team-role {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  padding-bottom: 30px;
+}
+.team-border {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /* footer */
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  display: block;
+  padding-bottom: 20px;
 }
 
+.footer-item:not(:last-child) {
+  padding-bottom: 9px;
+}
 /* герой */
 .hero {
   background-color: var(--background-color);
@@ -172,10 +192,26 @@ button {
   padding: 10px 32px;
   font-weight: 700;
   line-height: 1.875;
-  /* align-items: center; */
   letter-spacing: 0.06em;
 }
+/* в каждой секции елементам списка нужно давать 
+display: flex; сделаю 1н клас на всех */
+.flex-list {
+  display: flex;
+}
 
+/* в каждой секции елементам списка нужно давать 
+margin-right: 30px; сделаю 1н клас на всех */
+.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* секция особенности features*/
+.features {
+  padding-top: 94px;
+  padding-bottom: 0;
+  width: 100%;
+}
 /* кнопки в фильтре */
 .button {
   background-color: var(--white-color);
@@ -236,10 +272,7 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
-.section > .list {
-  display: flex;
-  justify-content: space-around;
-}
+
 .filter > .list {
   display: flex;
 }
@@ -261,4 +294,5 @@ button {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  width: 100%;
 }
