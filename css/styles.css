@@ -69,6 +69,18 @@ button {
   text-align: center;
   cursor: pointer;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 100%;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* filter item  */
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -192,7 +204,7 @@ button {
 }
 
 .footer-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 /* герой */
 .hero {
@@ -247,10 +259,8 @@ li.item {
 }
 
 /* секция особенности features*/
-.features {
-  padding-top: 94px;
+.features.section {
   padding-bottom: 0;
-  width: 100%;
 }
 
 /* кнопки в фильтре */
@@ -316,13 +326,6 @@ li.item {
 }
 
 /* добавляем flex  */
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .page-header,
 .site-contact,
@@ -333,9 +336,4 @@ li.item {
 }
 .site-contact {
   margin-left: auto;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 100%;
 }
